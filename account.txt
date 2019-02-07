@@ -1,0 +1,116 @@
+
+Raja@DESKTOP-65V5AAH MINGW64 ~
+$ cd
+
+Raja@DESKTOP-65V5AAH MINGW64 ~
+$ cd /c
+
+Raja@DESKTOP-65V5AAH MINGW64 /c
+$ ls
+'$Recycle.Bin'/                id/           'Program Files'/        'System Volume Information'/
+'$WINDOWS.~BT'/                inetpub/      'Program Files (x86)'/   SYSTEM.SAV/
+'Documents and Settings'@      Intel/         ProgramData/            totalcmd/
+ git/                          OS             Recovery/               Users/
+ hiberfil.sys                  pagefile.sys  'share fonts'/           Windows/
+ hp/                           PerfLogs/      swapfile.sys
+'HP Universal Print Driver'/   PREETI.TTF     SWSETUP/
+
+Raja@DESKTOP-65V5AAH MINGW64 /c
+$ cd git/
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$ git config --global user.name "rajalahan"
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$ git config --global user.email raja_lahan@hotmail.com
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$ git clone https://github.com/rajalahan/rrc.git
+Cloning into 'rrc'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$ ls
+rrc/
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git
+$ cd rrc/
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ ls
+README.md
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ ls
+README.md  test_rrc.txt
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git add test_rrc.txt
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test_rrc.txt
+
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git commit -m "This is my first test on git" test_rrc.txt
+[master e3c4963] This is my first test on git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test_rrc.txt
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/rajalahan/rrc.git
+   91d5b69..e3c4963  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test_rrc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git commit -m "This is my edited first test on git" test_rrc.txt
+[master 8542ecb] This is my edited first test on git
+ 1 file changed, 2 insertions(+)
+
+Raja@DESKTOP-65V5AAH MINGW64 /c/git/rrc (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 299.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rajalahan/rrc.git
+   e3c4963..8542ecb  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
